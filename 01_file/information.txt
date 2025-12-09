@@ -1,0 +1,13 @@
+// first download mingw that is compiler we will be using
+// dowloading like harry bhai do`
+
+// step 2 : then in terminal write gcc and file name ---it will convert your code to machine lang
+
+// step 03 : then for run your file write ./yourML file name
+
+// but it is extremely disturbing write this again and again so download
+// code runner extension you just have to click that btn
+
+// declare mean create a variable
+assign mean give variable a value
+initialize mean do create and assign variable at a time
