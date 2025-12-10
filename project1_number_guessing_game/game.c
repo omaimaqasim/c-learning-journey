@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+// use rightclick + change all occurance it select all words similar to that word
 int main()
 {
     int guess_number, count_try = 0;
