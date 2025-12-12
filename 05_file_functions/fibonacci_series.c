@@ -3,7 +3,7 @@
 // 0,1,1,2,3,5,8  make series like this until input number
 int main(){
 
-  int number_of_terms,sum=0,i=0,j=1;
+  int number_of_terms,sum=0,i=0,j=1,previous_sum=0;
   printf("enter number of terms: \n");
   scanf("%d",&number_of_terms);
 
@@ -12,11 +12,11 @@ int main(){
   {
     if (i==0 || i==1)
     {
+         sum = i;
         printf("%d",i);
     }
     else{
-        printf("%d",sum+=j);
-        j++;
+       
     }
     
   }
