@@ -1,0 +1,58 @@
+Two-Player Dice Rolling Game in C
+Problem Statement
+
+Design and implement a C program for a two-player dice rolling game with the following rules:
+
+The game consists of two players: Player 1 and Player 2.
+
+The game starts with Player 1.
+
+A dice roll generates a random number between 1 and 6.
+
+Player 1 keeps rolling the dice and accumulating the score until the dice shows the number 1.
+
+When the dice shows 1:
+
+Player 1's turn immediately ends.
+
+The total score accumulated by Player 1 is calculated and stored.
+
+After Player 1's turn ends, Player 2 starts playing.
+
+Player 2 follows the same rules:
+
+Keeps rolling the dice.
+
+Accumulates the score.
+
+Stops when the dice shows 1.
+
+After both players have completed their turns:
+
+Compare the total scores of Player 1 and Player 2.
+
+If Player 1's score is higher, Player 1 wins.
+
+Otherwise, Player 2 wins.
+
+Requirements
+
+Use loops (while or do-while) to simulate continuous dice rolling.
+
+Use conditional statements (if-else) to control game flow.
+
+Use the rand() function to simulate dice rolls.
+
+Use appropriate variables to store scores.
+
+Display each dice roll and current score during gameplay.
+
+Display the final scores and declare the winner at the end.
+
+Constraints
+
+The dice must generate values only between 1 and 6.
+
+The game must end immediately when a player rolls a 1.
+
+The program should be well-structured and properly commented.
