@@ -20,7 +20,7 @@ int main()
 
     // means wo increase ya dcrease hoga jitna byte le raha hoga
     printf("the address of a is:%u\n", ptr);
-
+ 
     /* 1. Addition of a number to a pointer */
     printf("p1:%u and p2:%u\n", p1, p2);
     printf("Initial p1 points to value: %d\n", *p1);

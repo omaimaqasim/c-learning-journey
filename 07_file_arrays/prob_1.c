@@ -5,17 +5,11 @@ to the third element where ptr is a pointer pointing to the first element of the
 array.
 */
 int main (){
-    int numbers[10],i;
+    int numbers[] = {1,2,3,4,5,6,7,8,9,10};
     int* ptr = &numbers[0];
     
-    for ( i = 0; i < 10; i++)
-    {
-        numbers[i] = i+i;
-        printf("%d\n",numbers[i]);
-    }
-    
-    printf("\n%d\n",*ptr);
-
+   
+   printf("the value at address %u is %d",ptr+2,*(ptr+2));
     
 return 0;
 }
