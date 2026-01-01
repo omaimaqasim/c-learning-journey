@@ -56,3 +56,8 @@ The dice must generate values only between 1 and 6.
 The game must end immediately when a player rolls a 1.
 
 The program should be well-structured and properly commented.
+
+
+
+
+//for result you just have to divide score/turn and check which has result more that player is winner
