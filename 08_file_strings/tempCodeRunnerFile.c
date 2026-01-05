@@ -1,0 +1,1 @@
+ // char copy = strcpy(str,copy);
