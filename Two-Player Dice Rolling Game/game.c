@@ -11,6 +11,9 @@ void play_turn(int player_no, int *score, int *turn)
 
     do
     {
+
+        printf("please enter to roll the dice \n");
+        getchar();
         // random dice roll
         random_dice = rand() % 7;
 
@@ -46,7 +49,7 @@ int main()
     p2_result = player2_score / p2_turn;
 
     // printing individual average scores
-    // debug error soon it is not showing correct result
+   
     printf("Player 1 average score per turn: %.2f\n", p1_result);
     printf("Player 2 average score per turn: %.2f\n", p2_result);
 
