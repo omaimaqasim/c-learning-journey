@@ -89,6 +89,40 @@ void display_dice(int *dice)
         printf("%d ", *(dice + i));
     }
 }
+
+// scoring categories functions
+
+// 1. ones to sixes
+
+void upper_class_score(int *dice);
+void upper_class_score(int *dice)
+{
+    int upper[6] = {0}, i, j, times = 1, sum = 0;
+    for (i = 0; i < 5; i++)
+    {
+        for (j = i + 1; j < 5; j++)
+        {
+            if (*(dice + i) == *(dice + j))
+            {
+                times++;
+            }
+        }
+        sum =  *(dice + i) * times;
+        upper[i] = sum;
+        times = 1;
+        sum = 0;
+    }
+
+    //they are givingg answer correct but nt in correct place
+    printf("\n");
+    
+    for ( i = 0; i < 6; i++)
+    {
+        printf("%d\n",upper[i]);
+        
+    }
+    
+}
 int main()
 {
     int dice[5], i, turns = 2;
@@ -106,6 +140,9 @@ int main()
 
     // printing dice
     display_dice(dice);
+
+    //
+    upper_class_score(dice);
 
     return 0;
 }
