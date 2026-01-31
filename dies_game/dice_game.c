@@ -23,31 +23,31 @@ void dice_rolling(int *die, int size)
 
 // re roll dice
 
-void re_roll_dice(int *die, int size, int turns);
-void re_roll_dice(int *die, int size, int turns)
+void re_roll_dice(int *die, int size, int *turns);
+void re_roll_dice(int *die, int size, int *turns)
 {
     int permission, i, j, rerollPositions[5] = {0}, selected_position;
     // if for ask permission for re roll
-    if (turns != 0)
+    
+    while ( (*turns)!=0)
     {
-
+        (*turns)--;
         printf("\n\nWant to re-roll dice?(enter 1=\"yes\", 0=\"no\")\nyou have two turn to re roll the dice\n");
         scanf("%d", &permission);
-
+        
         if (permission == 1)
         {
-            turns--;
-
+            
             printf("select position (1 to 5) of dice which you want to re-roll\n select 0 if you done selecting position\n");
-
+            
             // getting position of dice which to re roll
             for (i = 0; i < 5; i++)
             {
-
+                
                 scanf("%d", &selected_position);
                 //  second if for checking how many dice want to re-roll :return if 0
                 if (selected_position == 0)
-                    break;
+                break;
                 else if (selected_position >= 1 && selected_position <= 5)
                 {
                     rerollPositions[i] = selected_position;
@@ -57,11 +57,11 @@ void re_roll_dice(int *die, int size, int turns)
                     printf("enter correct position\n");
                 }
             }
-
+            
             // change selected dice
             for (i = 1; i <= 5; i++)
             {
-
+                
                 for (j = 0; j < 5; j++)
                 {
                     // third if : for checking position same as index of dice arr
@@ -71,12 +71,14 @@ void re_roll_dice(int *die, int size, int turns)
                     }
                 }
             }
+            
         }
+        
     }
-    else
-    {
+    
+    
         printf("you turns to re-roll the dice finished\n");
-    }
+   
 }
 
 // function for printing dice
@@ -97,31 +99,23 @@ void display_dice(int *dice)
 void upper_class_score(int *dice);
 void upper_class_score(int *dice)
 {
-    int upper[6] = {0}, i, j, times = 1, sum = 0;
+    int upper[6] = {0}, i, j, value;
+    // use pointers to make arr of strings
+    char *score[6] = {"ones", "twos", "threes", "fours", "fives", "sixes"};
     for (i = 0; i < 5; i++)
     {
-        for (j = i + 1; j < 5; j++)
-        {
-            if (*(dice + i) == *(dice + j))
-            {
-                times++;
-            }
-        }
-        sum =  *(dice + i) * times;
-        upper[i] = sum;
-        times = 1;
-        sum = 0;
+         value = dice[i];
+         upper[value-1] +=value;
+
     }
 
-    //they are givingg answer correct but nt in correct place
-    printf("\n");
-    
-    for ( i = 0; i < 6; i++)
+   
+    printf("\n\n");
+
+    for (i = 0; i < 6; i++)
     {
-        printf("%d\n",upper[i]);
-        
+        printf("  %s:%d\n",score[i], upper[i]);
     }
-    
 }
 int main()
 {
@@ -136,7 +130,7 @@ int main()
     display_dice(dice);
 
     // RE ROLL THE DICE
-    re_roll_dice(dice, 5, turns);
+    re_roll_dice(dice, 5, &turns);
 
     // printing dice
     display_dice(dice);
