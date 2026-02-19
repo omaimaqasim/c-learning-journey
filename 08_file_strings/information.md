@@ -5,3 +5,6 @@
 > 1d array terminated by null char '\0'
 
 >in c array and pointer cannot be re assign
+
+
+//string pointer and array some problems are in pending 
