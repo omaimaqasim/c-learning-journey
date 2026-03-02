@@ -15,7 +15,9 @@ printf("the value of number is %d \n",num);
 fscanf(ptr,"%d",&num);
 printf("the value of number is %d \n",num);
 
+// closing the file
  fclose(ptr);
+
 
 return 0;
 }
