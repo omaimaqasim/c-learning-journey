@@ -1,0 +1,103 @@
+/*
+1. Reverse a String Using Pointers
+Write a program that reverses a string using only pointers.
+Do not use array indexing [] or built-in functions like strrev().
+
+Example:
+Input:  hello
+Output: olleh
+
+Concepts tested:
+- Pointers
+- Strings
+- Pointer arithmetic
+*/
+
+
+/*
+2. Find the Second Largest Number in an Array
+Write a program that finds the second largest element in an array.
+
+Example:
+Array: 10 5 8 20 15
+Output: Second largest = 15
+
+Conditions:
+- Do not sort the array
+- Try to solve using a single loop
+
+Concepts tested:
+- Arrays
+- Logical thinking
+*/
+
+
+/*
+3. Check if Two Strings Are Anagrams
+Two strings are anagrams if they contain the same characters
+in a different order.
+
+Example 1:
+Input:
+listen
+silent
+
+Output:
+Anagram
+
+Example 2:
+Input:
+hello
+world
+
+Output:
+Not Anagram
+
+Concepts tested:
+- Strings
+- Character counting
+- Arrays
+*/
+
+
+/*
+4. Recursive Power Function
+Write a function using recursion to calculate power.
+
+Function prototype:
+int power(int base, int exponent);
+
+Example:
+Input: power(2,5)
+Output: 32
+
+Concepts tested:
+- Recursion
+- Function calls
+- Base condition
+*/
+
+
+/*
+5. Matrix Multiplication
+Write a program to multiply two matrices.
+
+Example:
+
+Matrix A
+1 2
+3 4
+
+Matrix B
+5 6
+7 8
+
+Output
+19 22
+43 50
+
+Concepts tested:
+- 2D arrays
+- Nested loops
+- Matrix operations
+*/
